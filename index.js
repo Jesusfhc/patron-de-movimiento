@@ -6,12 +6,14 @@ canvas.height = innerHeight;
 
 let balls = [];
 
-for (let i =0 ; i < 5; i++) {
+for (let i =0 ; i < 50; i++) {
     balls.push(new Ball(canvas.width / 2, canvas.height / 2))
 }
 
 
 function animar () {
+
+    ctx.clearRect(0,0, canvas.width, canvas.height);
 
     balls.forEach(ball => {
         ball.dibujar();
